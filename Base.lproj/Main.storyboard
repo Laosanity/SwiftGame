@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="SwiftGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWz-cB-Sdn">
+                                <rect key="frame" x="224" y="118" width="84" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="37b-HP-IrD">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZA-29-qHm">
+                                        <rect key="frame" x="8" y="16" width="68" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.53772613411541259" blue="0.859375" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xat-OU-HSt">
+                                        <rect key="frame" x="8" y="39" width="68" height="48"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.0" green="0.7149545171824605" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMM-3H-vTK">
+                                <rect key="frame" x="224" y="234" width="84" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ga3-Rd-zYR">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLy-z3-Ids">
+                                        <rect key="frame" x="8" y="16" width="68" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.52450440001647625" green="0.30423070393794566" blue="0.859375" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl2-AJ-gWP">
+                                        <rect key="frame" x="8" y="39" width="68" height="48"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.5273420102833638" green="0.30587661609610794" blue="0.86402428668478259" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-Sk-Mk4">
+                                <rect key="frame" x="73" y="465" width="170" height="49"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="DOWN" backgroundImage="whitebg.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="down:" destination="LVB-YS-i5n" eventType="touchUpInside" id="ary-j0-9sh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vn-Lf-wGU">
+                                <rect key="frame" x="239" y="342" width="55" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="START" backgroundImage="whitebg.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="LVB-YS-i5n" eventType="touchUpInside" id="aZE-Lv-QHx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db3-g2-nq2">
+                                <rect key="frame" x="22" y="467" width="45" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="&lt;" backgroundImage="whitebg.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toLeft:" destination="LVB-YS-i5n" eventType="touchUpInside" id="ms3-Rt-47H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-KL-DXs">
+                                <rect key="frame" x="249" y="467" width="45" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <state key="normal" title=">" backgroundImage="whitebg.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toRight:" destination="LVB-YS-i5n" eventType="touchUpInside" id="3I7-LD-5rh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="E6p-as-yOe" appends="YES" id="3wx-UX-XMt"/>
+                            <outletCollection property="gestureRecognizers" destination="u0x-01-Ezo" appends="YES" id="LkT-g3-FYa"/>
+                            <outletCollection property="gestureRecognizers" destination="GYZ-uA-Jre" appends="YES" id="SeS-TU-GuB"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="levelLabel" destination="Jl2-AJ-gWP" id="lqX-bO-Iva"/>
+                        <outlet property="scoreLabel" destination="xat-OU-HSt" id="ACg-dP-CDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="E6p-as-yOe">
+                    <connections>
+                        <action selector="didTap:" destination="LVB-YS-i5n" id="hE5-dt-stH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="u0x-01-Ezo">
+                    <connections>
+                        <action selector="didPan:" destination="LVB-YS-i5n" id="CFP-mt-Fjh"/>
+                    </connections>
+                </panGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="GYZ-uA-Jre">
+                    <connections>
+                        <action selector="didSwipe:" destination="LVB-YS-i5n" id="YBy-9p-1tU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="729" y="689"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="whitebg.png" width="84" height="100"/>
+    </resources>
+</document>
